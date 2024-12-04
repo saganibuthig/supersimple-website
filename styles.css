@@ -1,0 +1,218 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+   
+
+body{
+    width:100%;
+    height: 100vh;
+    padding:0;
+    margin:0; 
+    overflow: hidden;
+    font-family: 'Poppins' Tahoma;
+    font-size: 16px;
+    
+  
+  
+}
+.logo-image {
+    width:75px;
+    height:75px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border:2px solid white;
+    background-size: cover;
+}
+.side-bar{
+    width:100%;
+    height:90px;
+    color:white;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    border-bottom: 2px solid white;
+}
+.nav-item{
+    color: white;
+    background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    width:110px;
+    height:45px;
+    margin-left:5px;
+    margin-right:10px;
+    padding-top:10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+   border:1.5px solid rgb(252, 244, 244);
+    gap:5px;
+    
+}
+#nav-list{
+    width:100%;
+    display:flex ;
+    flex-direction: row;
+    justify-content: end;
+    
+
+}
+h1,p {
+    position:relative;
+    top:50px;
+    font-size: 4em;
+    font-weight: 2em;
+}
+#welcome-info{
+width:100%;
+height:100vh;
+color:white;
+background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.image{
+    width:350px;
+    height:350px;
+    border-radius: 50%;
+    border:5px  solid white;
+}
+#main-content{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    display: flex;
+    flex-direction: column;
+    
+}
+.portfolio{
+    width:90%;
+    height:80vh;
+    margin: auto;
+    margin-top:20vh ;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap:5px;
+    
+}
+
+.box1, .box2, .box3, .box4,.box5{
+    background-color: rgb(99, 82, 82);
+    gap:5px;
+   
+    border-radius: 10px;
+}
+@media (max-width: 430px){
+    .portfolio{
+        width:100%;
+        height:70vh;
+
+    }
+}
+.grid-photo{
+width:100%;
+height:100%;
+object-fit: cover;
+padding:5px;
+}
+
+.box1{
+ grid-column: 1 / 5;
+ grid-row: 1 / 6;
+ 
+}
+.box2{
+ grid-column: 5 / -1;
+ grid-row: 1 / 7;
+ 
+ gap: 5px;
+}
+.box3{
+    grid-column: 1 / 5;
+    grid-row: 6 / 12;
+   
+}
+.box4{
+    grid-column: 5 / 8;
+    grid-row: 7 / 12;
+}
+.box5{
+    grid-column: span 3;
+    grid-row: span 5; 
+}
+#contact{
+ width:100%;
+ height:100vh;
+ background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+ position:relative;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+}
+h2{
+    text-align: center;
+    color:white;
+    font-size: 4em;
+}
+p{
+    text-align: center;
+    color:white;
+    font-size: 1.5em;
+    font-style: italic;
+}
+#contact-header{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#contact-app{
+    width:100%;
+    text-align: center;
+    font-size: 2em;
+   
+    position: relative;
+    bottom:200px;
+    
+}
+fab fa-facebook-square{
+    width:200px;
+}
+.icon-facebook{
+    color:blue;
+}
+.icon-instagram{
+    color: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+.icon-twitter{
+    color:blue;
+}
+.video{
+    
+    width:100%;
+    height:40vh;
+    padding:4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
